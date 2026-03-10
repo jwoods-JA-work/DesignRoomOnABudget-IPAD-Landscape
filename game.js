@@ -19,6 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const resetBtn = document.getElementById("resetBtn");
   const backBtn = document.getElementById("backtoDiceBtn");
   const finishBtn = document.getElementById("finishRoom");
+  const timerDisplay = document.getElementById("timer");
+  const drawer = document.getElementById("drawer");
+
+  const timer = setInterval(() => {
+  if (timeLeft > 0) {
+    timerDisplay.innerText = `⏱ Time Left to Be Able to Submit: ${timeLeft}`;
+    timeLeft--;
+  } else {
+    clearInterval(timer);
+    timerDisplay.innerText = "✅ You can submit now!";
+    finishBtn.disabled = false; // enable button
+    timerDisplay.classList.remove("timerWarning");
+  }
+}, 1000);
 
   const tiers = ["Basic", "Standard", "Luxury"];
 
@@ -646,13 +660,38 @@ imgElem.id = item.name.replaceAll(" ", "_");
   });
 
   // ---------------- FINISH ROOM ----------------
-  finishBtn.addEventListener("click", () => {
-    if (budget >= 0) {
-      alert("✅ You stayed within budget! Drawer unlocked! Your code is 200");
-    } else {
-      alert("❌ Over Budget! Try Again");
-    }
-  });
+finishBtn.addEventListener("click", () => {
+
+  if (budget >= 0) {
+
+    // Unlock drawer
+    drawer.classList.remove("locked");
+    drawer.classList.add("unlocked");
+
+    // Show code
+    drawer.innerHTML = "🔓 Drawer Unlocked! You stayed within budget Code: <strong>200</strong>";
+confetti({
+  particleCount: 100,
+  angle: 60,
+  spread: 70,
+  origin: { x: 0 }
+});
+
+confetti({
+  particleCount: 100,
+  angle: 120,
+  spread: 70,
+  origin: { x: 1 }
+});
+
+  } else {
+
+    drawer.classList.add("locked");
+    drawer.innerHTML = "❌ Over Budget! Drawer Locked";
+
+  }
+
+});
 
   // ---------------- RESET ROOM ----------------
 function resetRoom() {
