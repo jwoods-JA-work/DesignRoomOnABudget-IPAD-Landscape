@@ -110,7 +110,7 @@ const timer = setInterval(() => {
         flippedImg:"Luxury/Couch/luxury_couch1-f.png",
         rearImg: "Luxury/Couch/luxury_couch1_back.png",
         rearImgF: "Luxury/Couch/luxury_couch1_back-f.png",
-        width:300
+        width:350
       },
 
       { name:"Luxury Couch 2", price:1600, img:"Luxury/Couch/luxury_couch2.png",
@@ -279,19 +279,19 @@ const timer = setInterval(() => {
         flippedImg: "Basic/Lighting/basic_lighting1-f.png",
         rearImg:"Basic/Lighting/basic_lighting1.png",
         rearImgF:"Basic/Lighting/basic_lighting1-f.png",
-        width:150
+        width:100
       },
       {name:"Basic Lighting 2", price: 120, img:"Basic/Lighting/basic_lighting2.png",
         flippedImg:"Basic/Lighting/basic_lighting2.png",
         rearImg:"Basic/Lighting/basic_lighting2.png",
         rearImgF: "Basic/Lighting/basic_lighting2.png",
-        width: 200
+        width: 100
       },
         {name:"Basic Lighting 3", price: 120, img:"Basic/Lighting/basic_lighting3.png",
         flippedImg:"Basic/Lighting/basic_lighting3.png",
         rearImg:"Basic/Lighting/basic_lighting3.png",
         rearImgF: "Basic/Lighting/basic_lighting3.png",
-        width: 150
+        width: 100
       }
     ],
 
@@ -300,21 +300,21 @@ const timer = setInterval(() => {
         flippedImg: "Standard/Lighting/Standard_Lighting1-f.png",
         rearImg: "Standard/Lighting/Standard_Lighting1.png",
         rearImgF: "Standard/Lighting/Standard_Lighting1-f.png",
-        width:150
+        width:100
       },
 
       {name:"Standard Lighting 2", price: 250, img:"Standard/Lighting/Standard_Lighting2.png",
         flippedImg: "Standard/Lighting/Standard_Lighting2-f.png",
         rearImg: "Standard/Lighting/Standard_Lighting2.png",
         rearImgF: "Standard/Lighting/Standard_Lighting2-f.png",
-        width:125
+        width:100
       },
 
       {name:"Standard Lighting 3", price: 250, img:"Standard/Lighting/Standard_Lighting3.png",
         flippedImg: "Standard/Lighting/Standard_Lighting3.png",
         rearImg: "Standard/Lighting/Standard_Lighting3.png",
         rearImgF: "Standard/Lighting/Standard_Lighting3.png",
-        width:125
+        width:100
       }      
 
     ],
@@ -330,14 +330,14 @@ Luxury: [
     flippedImg: "Luxury/Lighting/luxury_lighting2.png",
     rearImg: "Luxury/Lighting/luxury_lighting2.png",
     rearImgF: "Luxury/Lighting/luxury_lighting2.png",
-    width:125
+    width:100
   },
 
   {name:"Luxury Lighting 3", price:500, img:"Luxury/Lighting/luxury_lighting3.png",
     flippedImg: "Luxury/Lighting/luxury_lighting3.png",
     rearImg: "Luxury/Lighting/luxury_lighting3.png",
     rearImgF: "Luxury/Lighting/luxury_lighting3.png",
-    width:125
+    width:100
   }
 ]
   },
