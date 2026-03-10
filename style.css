@@ -254,13 +254,14 @@ body {
    START SCREEN (if used)
 ================================================= */
 body.start-screen {
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #36d1dc, #5b86e5);
-  color: white;
-  font-size: 24px;
+  min-height: 100vh;
+  padding:20px;
+  background: linear-gradient(135deg,#66e35d, #89e7fa,#1441e3);
+  font-family: 'Trebuchet MS', sans-serif;
+  color:#000;
 }
 
 .start-screen .controls {
@@ -269,40 +270,48 @@ body.start-screen {
   gap: 10px;
 }
 
-body.start-screen {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0px;
-  background: linear-gradient(135deg,#66e35d, #89e7fa,#1441e3);
-  font-family: 'Trebuchet MS', sans-serif;
-  color:#000;
-}
 
 .slides-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
   max-width: 700px;
-  padding: 20px;
-}
+  padding: 40px;
+
+background: rgba(255,255,255,1);
+  border-radius: 20px;
+box-shadow: 0 6px 15px rgba(0,0,0,0.3);}
 
 .slide {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
+    animation: fadeSlide 0.6s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .slide img {
-  width: 700px;
+  width: 400px;
   margin-bottom: 20px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
 }
 
 .slide p {
-  font-size: 2.0rem;
-  margin-bottom: 60px;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color:#000080;
 }
 /*
 #nextBtn {
@@ -356,7 +365,33 @@ body.start-screen {
   transform: scale(1.1);
 }
 
+.slide-controls button:active {
+  transform: scale(0.95);
+}
+
 .locked {
   color: yellow;
+}
+
+
+#timer {
+  font-size: 16px;
+  color: orange;
+}
+
+#drawer {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.locked {
+  background: #ddd;
+}
+
+.Direct {
+  color: yellow
 }
 
