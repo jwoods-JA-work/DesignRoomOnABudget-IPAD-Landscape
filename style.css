@@ -395,3 +395,21 @@ box-shadow: 0 6px 15px rgba(0,0,0,0.3);}
   color: yellow
 }
 
+#resetBtn, #backtoDiceBtn {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, #36d1dc, #5b86e5);
+  color: white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#resetBtn:hover, #backtoDiceBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
