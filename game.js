@@ -22,7 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const timerDisplay = document.getElementById("timer");
   const drawer = document.getElementById("drawer");
 
-  const timer = setInterval(() => {
+let timeLeft = 5;
+finishBtn.disabled = true; // disable initially
+
+const timer = setInterval(() => {
   if (timeLeft > 0) {
     timerDisplay.innerText = `⏱ Time Left to Be Able to Submit: ${timeLeft}`;
     timeLeft--;
@@ -660,6 +663,7 @@ imgElem.id = item.name.replaceAll(" ", "_");
   });
 
   // ---------------- FINISH ROOM ----------------
+// ---------------- FINISH ROOM ----------------
 finishBtn.addEventListener("click", () => {
 
   if (budget >= 0) {
