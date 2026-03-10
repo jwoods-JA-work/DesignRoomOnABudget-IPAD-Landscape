@@ -375,8 +375,10 @@ box-shadow: 0 6px 15px rgba(0,0,0,0.3);}
 
 
 #timer {
-  font-size: 16px;
-  color: orange;
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffd700;
 }
 
 #drawer {
