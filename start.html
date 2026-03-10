@@ -14,13 +14,20 @@
 <div class="gameLayout">
 
   <!-- ================= TOP BAR ================= -->
-  <header class="topBar">
+  <div class="topBar">
+    <div class = "gameInfo">
 <span id="budget"></span> 
-      <div id="Directions" class="locked"> (Stay within budget to get your code)</div>
-
+      <div id="Directions" class="Direct"> (Stay within budget to get your code)</div>
+        <div id="timer"></div>
+        </div>
+</div>
+<div class = "topButtons">
   <button id = "resetBtn" onclick="resetRoom()">Reset Room</button>
   <button id = "backtoDiceBtn" onclick = "backtoDice()" > Back to Dice</button>
-  </header>
+
+</div>
+
+
 
 
   <!-- ================= MAIN AREA ================= -->
@@ -63,12 +70,15 @@
         <button id="finishRoom">Finish Room</button>
       </div>
 
+          <div id="drawer" class="locked">🔒 Locked Code</div>
+
+
     </div>
 
   </div>
 
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script src="game.js"></script>
 
 </body>
