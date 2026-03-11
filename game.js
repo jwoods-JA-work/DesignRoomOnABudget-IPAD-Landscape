@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const timerDisplay = document.getElementById("timer");
   const drawer = document.getElementById("drawer");
 
-let timeLeft = 5;
+let timeLeft = 60;
 finishBtn.disabled = true; // disable initially
 
 const timer = setInterval(() => {
