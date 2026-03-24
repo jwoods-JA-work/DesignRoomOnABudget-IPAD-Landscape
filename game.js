@@ -161,16 +161,16 @@ const timer = setInterval(() => {
         width: 200
       },
       {name:"Standard Table 2", price: 400, img:"Standard/TableStandard_table2.png",
-        flippedImg: "Standard/TableStandard_table2-f.png",
-        rearImg:"Standard/TableStandard_table2.png",
-        rearImgF:"Standard/TableStandard_table2-f.png",
+        flippedImg: "Standard/Table/Standard_table2-f.png",
+        rearImg:"Standard/Table/Standard_table2.png",
+        rearImgF:"Standard/Table/Standard_table2-f.png",
         width: 200
       },
 
-      {name:"Standard Table 3", price: 400, img:"Standard/TableStandard_table3.png",
-        flippedImg: "Standard/TableStandard_table3-f.png",
-        rearImg:"Standard/TableStandard_table3.png",
-        rearImgF:"Standard/TableStandard_table3-f.png",
+      {name:"Standard Table 3", price: 400, img:"Standard/Table/Standard_table3.png",
+        flippedImg: "Standard/Table/Standard_table3-f.png",
+        rearImg:"Standard/Table/Standard_table3.png",
+        rearImgF:"Standard/Table/Standard_table3-f.png",
         width: 200
       },
     ],
